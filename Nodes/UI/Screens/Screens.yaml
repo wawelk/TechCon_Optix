@@ -17,7 +17,7 @@ Children:
     - Name: Path
       Type: BaseDataVariableType
       DataType: ResourceUri
-      Value: "ns=28;%PROJECTDIR%/TechCon OPC UA Demo.png"
+      Value: "ns=28;%PROJECTDIR%/TechCon OPC UA Demo Modbus.png"
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -26,7 +26,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 20.0
+      Value: 10.0
 - Name: Optix_Simulator
   Id: g=36e8d1d4e12ecf19cd1ec145f85604ac
   Supertype: Screen
