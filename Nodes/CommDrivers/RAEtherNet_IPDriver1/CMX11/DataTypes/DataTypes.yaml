@@ -1,0 +1,64 @@
+Name: DataTypes
+Type: FolderType
+Children:
+- Class: DataType
+  Name: SinWave
+  Id: g=09ce6fb9c3b34bab5d7677d8e8a29775
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "SinWave",
+    "DataType": {
+     "IdType": 2,
+     "Id": "09ce6fb9c3b34bab5d7677d8e8a29775",
+     "Namespace": 28
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Period",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Phase_Shift",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Amplitude",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "SinWave",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "NoOfCycles_Reset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Error",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"SinWave"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding

@@ -1,0 +1,14 @@
+Name: Sim1
+Id: g=21f233960664e53ce701811583af28a9
+Type: FolderType
+Children:
+- Name: EIP_Sine1
+  Id: g=e0d22a9753412d2c63f3677516923396
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=7de85453a37ae88da48b8c8a56b44a34
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/CMX11/Tags/Program&:EIP_Data/CMX_EIP_Sine01"

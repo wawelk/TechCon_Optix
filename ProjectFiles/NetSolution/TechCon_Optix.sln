@@ -1,0 +1,21 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechCon_Optix", "TechCon_Optix.csproj", "{D6688B53-A697-C8A4-5D12-91ACDB16E820}"
+EndProject
+Global
+    GlobalSection(SolutionConfigurationPlatforms) = preSolution
+        Debug|Any CPU = Debug|Any CPU
+        Release|Any CPU = Release|Any CPU
+    EndGlobalSection
+    GlobalSection(ProjectConfigurationPlatforms) = postSolution
+        {D6688B53-A697-C8A4-5D12-91ACDB16E820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {D6688B53-A697-C8A4-5D12-91ACDB16E820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {D6688B53-A697-C8A4-5D12-91ACDB16E820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {D6688B53-A697-C8A4-5D12-91ACDB16E820}.Release|Any CPU.Build.0 = Release|Any CPU
+    EndGlobalSection
+    GlobalSection(SolutionProperties) = preSolution
+        HideSolutionNode = FALSE
+    EndGlobalSection
+EndGlobal

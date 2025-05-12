@@ -1,0 +1,6 @@
+Name: CMX EIP Data
+Id: g=a4046f4b9361c6e791618277d55809e5
+Type: FolderType
+Children:
+- File: Sim1/Sim1.yaml
+- File: Sim2/Sim2.yaml

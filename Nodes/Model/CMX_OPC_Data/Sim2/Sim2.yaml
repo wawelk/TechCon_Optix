@@ -1,0 +1,14 @@
+Name: Sim2
+Id: g=39e0792ccbbd9670b41f1292d33f4218
+Type: FolderType
+Children:
+- Name: OPC_Sine2
+  Id: g=2339a9fb892b83d28c88b8cb14f2c8a8
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=80dec05c84b55d6037166aaf5ad71a1d
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../OPC-UA/OPCUAClient1/Objects/00, Compact GuardLogix 5380 SIL2, SineWaves/Program&:MainProgram/Program&:OPC_UA_Data/OPC_Sine02/SinWave"

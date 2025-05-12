@@ -1,0 +1,187 @@
+Name: 'Program:EIP_Data'
+Type: FolderType
+Children:
+- Name: EIP_Sine01
+  Type: SinWave
+  DataType: SinWave
+  Children:
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EIP_Data.EIP_Sine01.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EIP_Data.EIP_Sine01.EnableOut"
+  - Name: Period
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EIP_Data.EIP_Sine01.Period"
+  - Name: Phase_Shift
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EIP_Data.EIP_Sine01.Phase_Shift"
+  - Name: Amplitude
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EIP_Data.EIP_Sine01.Amplitude"
+  - Name: SinWave
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EIP_Data.EIP_Sine01.SinWave"
+  - Name: NoOfCycles_Reset
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EIP_Data.EIP_Sine01.NoOfCycles_Reset"
+  - Name: Error
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EIP_Data.EIP_Sine01.Error"
+- Name: EIP_Sine02
+  Type: SinWave
+  DataType: SinWave
+  Children:
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EIP_Data.EIP_Sine02.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EIP_Data.EIP_Sine02.EnableOut"
+  - Name: Period
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EIP_Data.EIP_Sine02.Period"
+  - Name: Phase_Shift
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EIP_Data.EIP_Sine02.Phase_Shift"
+  - Name: Amplitude
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EIP_Data.EIP_Sine02.Amplitude"
+  - Name: SinWave
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EIP_Data.EIP_Sine02.SinWave"
+  - Name: NoOfCycles_Reset
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EIP_Data.EIP_Sine02.NoOfCycles_Reset"
+  - Name: Error
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EIP_Data.EIP_Sine02.Error"
+- Name: Start_EIP_Sine01
+  Id: g=506d7412dcd4cd51ff0c313450ddbcdc
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:EIP_Data.Start_EIP_Sine01"
+- Name: Start_EIP_Sine02
+  Id: g=3fb922b5c95b17dd465e034e1894639b
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:EIP_Data.Start_EIP_Sine02"
+- Name: SinWaveChanged
+  Type: VariableChangedEventDispatcher
+  Children:
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../EIP_Sine01/SinWave"
+- Name: SinWaveChanged1
+  Type: VariableChangedEventDispatcher
+  Children:
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../EIP_Sine02/SinWave"
+- Name: CMX_EIP_Sine01
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:EIP_Data.CMX_EIP_Sine01"
+- Name: CMX_EIP_Sine02
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:EIP_Data.CMX_EIP_Sine02"

@@ -1,0 +1,7 @@
+Name: Model
+Id: g=07f645208e81b08c069c95d4a857586e
+Type: ModelCategoryFolder
+Children:
+- File: Optix_Data/Optix_Data.yaml
+- File: CMX_OPC_Data/CMX_OPC_Data.yaml
+- File: CMX_EIP_Data/CMX_EIP_Data.yaml

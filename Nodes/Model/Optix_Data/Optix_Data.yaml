@@ -1,0 +1,6 @@
+Name: Optix Data
+Id: g=11f15bf464a5987cf6a6b825fd437354
+Type: FolderType
+Children:
+- File: Sim1/Sim1.yaml
+- File: Sim2/Sim2.yaml

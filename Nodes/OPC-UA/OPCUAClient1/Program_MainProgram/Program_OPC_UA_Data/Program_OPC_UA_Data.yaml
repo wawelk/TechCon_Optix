@@ -1,0 +1,187 @@
+Name: 'ns=35;Program:OPC_UA_Data'
+Id: 'ns=35;s=Program:MainProgram.Program:OPC_UA_Data'
+Type: FolderType
+DisplayName: {"LocaleId":"","Text":"Program:OPC_UA_Data"}
+Description: {"LocaleId":"en-US","Text":"data created for OPC UA communications"}
+ReferenceType: Organizes
+Children:
+- Name: ns=35;OPC_Sine01
+  Id: 'ns=35;s=Program:MainProgram.Program:OPC_UA_Data.OPC_Sine01'
+  Type: SinWaveVariableType
+  DataType: SinWaveDataType
+  DisplayName: {"LocaleId":"","Text":"OPC_Sine01"}
+  Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees"}
+  ReferenceType: Organizes
+  Value: 
+   {
+    "TypeId": {
+     "IdType": 1,
+     "Id": "{SinWave}DataType",
+     "Namespace": 35
+    },
+    "Body": {
+     "EnableIn": false,
+     "EnableOut": false,
+     "Period": 1000,
+     "Phase_Shift": 0,
+     "Amplitude": 0.0,
+     "SinWave": 0.0,
+     "NoOfCycles_Reset": false,
+     "Error": false
+    }
+   }
+  Children:
+  - Name: EnableIn
+    Id: 'ns=35;s=Program:MainProgram.Program:OPC_UA_Data.OPC_Sine01.EnableIn'
+    Type: BaseDataVariableType
+    DataType: Boolean
+    DisplayName: {"LocaleId":"","Text":"EnableIn"}
+    Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees Enable Input - System Defined Parameter"}
+    ReferenceType: HasStructuredComponent
+  - Name: EnableOut
+    Id: 'ns=35;s=Program:MainProgram.Program:OPC_UA_Data.OPC_Sine01.EnableOut'
+    Type: BaseDataVariableType
+    DataType: Boolean
+    DisplayName: {"LocaleId":"","Text":"EnableOut"}
+    Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees Enable Output - System Defined Parameter"}
+    ReferenceType: HasStructuredComponent
+  - Name: Period
+    Id: 'ns=35;s=Program:MainProgram.Program:OPC_UA_Data.OPC_Sine01.Period'
+    Type: BaseDataVariableType
+    DataType: Int32
+    DisplayName: {"LocaleId":"","Text":"Period"}
+    Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees Period of Wave. Must be > 100ms."}
+    ReferenceType: HasStructuredComponent
+    Value: 1000
+  - Name: Phase_Shift
+    Id: 'ns=35;s=Program:MainProgram.Program:OPC_UA_Data.OPC_Sine01.Phase_Shift'
+    Type: BaseDataVariableType
+    DataType: Int32
+    DisplayName: {"LocaleId":"","Text":"Phase_Shift"}
+    Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees"}
+    ReferenceType: HasStructuredComponent
+  - Name: Amplitude
+    Id: 'ns=35;s=Program:MainProgram.Program:OPC_UA_Data.OPC_Sine01.Amplitude'
+    Type: BaseDataVariableType
+    DataType: Float
+    DisplayName: {"LocaleId":"","Text":"Amplitude"}
+    Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees"}
+    ReferenceType: HasStructuredComponent
+  - Name: SinWave
+    Id: 'ns=35;s=Program:MainProgram.Program:OPC_UA_Data.OPC_Sine01.SinWave'
+    Type: BaseDataVariableType
+    DataType: Float
+    DisplayName: {"LocaleId":"","Text":"SinWave"}
+    Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees Sin wave output in radians."}
+    ReferenceType: HasStructuredComponent
+  - Name: NoOfCycles_Reset
+    Id: 'ns=35;s=Program:MainProgram.Program:OPC_UA_Data.OPC_Sine01.NoOfCycles_Reset'
+    Type: BaseDataVariableType
+    DataType: Boolean
+    DisplayName: {"LocaleId":"","Text":"NoOfCycles_Reset"}
+    Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees Total number of repeated wave form since start/last reset."}
+    ReferenceType: HasStructuredComponent
+  - Name: Error
+    Id: 'ns=35;s=Program:MainProgram.Program:OPC_UA_Data.OPC_Sine01.Error'
+    Type: BaseDataVariableType
+    DataType: Boolean
+    DisplayName: {"LocaleId":"","Text":"Error"}
+    Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees"}
+    ReferenceType: HasStructuredComponent
+- Name: ns=35;OPC_Sine02
+  Id: 'ns=35;s=Program:MainProgram.Program:OPC_UA_Data.OPC_Sine02'
+  Type: SinWaveVariableType
+  DataType: SinWaveDataType
+  DisplayName: {"LocaleId":"","Text":"OPC_Sine02"}
+  Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees"}
+  ReferenceType: Organizes
+  Value: 
+   {
+    "TypeId": {
+     "IdType": 1,
+     "Id": "{SinWave}DataType",
+     "Namespace": 35
+    },
+    "Body": {
+     "EnableIn": false,
+     "EnableOut": false,
+     "Period": 1000,
+     "Phase_Shift": 0,
+     "Amplitude": 0.0,
+     "SinWave": 0.0,
+     "NoOfCycles_Reset": false,
+     "Error": false
+    }
+   }
+  Children:
+  - Name: EnableIn
+    Id: 'ns=35;s=Program:MainProgram.Program:OPC_UA_Data.OPC_Sine02.EnableIn'
+    Type: BaseDataVariableType
+    DataType: Boolean
+    DisplayName: {"LocaleId":"","Text":"EnableIn"}
+    Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees Enable Input - System Defined Parameter"}
+    ReferenceType: HasStructuredComponent
+  - Name: EnableOut
+    Id: 'ns=35;s=Program:MainProgram.Program:OPC_UA_Data.OPC_Sine02.EnableOut'
+    Type: BaseDataVariableType
+    DataType: Boolean
+    DisplayName: {"LocaleId":"","Text":"EnableOut"}
+    Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees Enable Output - System Defined Parameter"}
+    ReferenceType: HasStructuredComponent
+  - Name: Period
+    Id: 'ns=35;s=Program:MainProgram.Program:OPC_UA_Data.OPC_Sine02.Period'
+    Type: BaseDataVariableType
+    DataType: Int32
+    DisplayName: {"LocaleId":"","Text":"Period"}
+    Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees Period of Wave. Must be > 100ms."}
+    ReferenceType: HasStructuredComponent
+    Value: 1000
+  - Name: Phase_Shift
+    Id: 'ns=35;s=Program:MainProgram.Program:OPC_UA_Data.OPC_Sine02.Phase_Shift'
+    Type: BaseDataVariableType
+    DataType: Int32
+    DisplayName: {"LocaleId":"","Text":"Phase_Shift"}
+    Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees"}
+    ReferenceType: HasStructuredComponent
+  - Name: Amplitude
+    Id: 'ns=35;s=Program:MainProgram.Program:OPC_UA_Data.OPC_Sine02.Amplitude'
+    Type: BaseDataVariableType
+    DataType: Float
+    DisplayName: {"LocaleId":"","Text":"Amplitude"}
+    Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees"}
+    ReferenceType: HasStructuredComponent
+  - Name: SinWave
+    Id: 'ns=35;s=Program:MainProgram.Program:OPC_UA_Data.OPC_Sine02.SinWave'
+    Type: BaseDataVariableType
+    DataType: Float
+    DisplayName: {"LocaleId":"","Text":"SinWave"}
+    Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees Sin wave output in radians."}
+    ReferenceType: HasStructuredComponent
+  - Name: NoOfCycles_Reset
+    Id: 'ns=35;s=Program:MainProgram.Program:OPC_UA_Data.OPC_Sine02.NoOfCycles_Reset'
+    Type: BaseDataVariableType
+    DataType: Boolean
+    DisplayName: {"LocaleId":"","Text":"NoOfCycles_Reset"}
+    Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees Total number of repeated wave form since start/last reset."}
+    ReferenceType: HasStructuredComponent
+  - Name: Error
+    Id: 'ns=35;s=Program:MainProgram.Program:OPC_UA_Data.OPC_Sine02.Error'
+    Type: BaseDataVariableType
+    DataType: Boolean
+    DisplayName: {"LocaleId":"","Text":"Error"}
+    Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees"}
+    ReferenceType: HasStructuredComponent
+- Name: ns=35;Start_OPC_Sine01
+  Id: 'ns=35;s=Program:MainProgram.Program:OPC_UA_Data.Start_OPC_Sine01'
+  Type: BaseDataVariableType
+  DataType: Boolean
+  DisplayName: {"LocaleId":"","Text":"Start_OPC_Sine01"}
+  Description: {"LocaleId":"en-US","Text":""}
+  ReferenceType: Organizes
+- Name: ns=35;Start_OPC_Sine02
+  Id: 'ns=35;s=Program:MainProgram.Program:OPC_UA_Data.Start_OPC_Sine02'
+  Type: BaseDataVariableType
+  DataType: Boolean
+  DisplayName: {"LocaleId":"","Text":"Start_OPC_Sine02"}
+  Description: {"LocaleId":"en-US","Text":""}
+  ReferenceType: Organizes

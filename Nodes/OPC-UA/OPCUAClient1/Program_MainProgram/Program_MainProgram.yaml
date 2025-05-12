@@ -1,0 +1,8 @@
+Name: 'ns=35;Program:MainProgram'
+Id: 'ns=35;s=Program:MainProgram'
+Type: FolderType
+DisplayName: {"LocaleId":"","Text":"Program:MainProgram"}
+Description: {"LocaleId":"en-US","Text":""}
+ReferenceType: Organizes
+Children:
+- File: Program_OPC_UA_Data/Program_OPC_UA_Data.yaml

@@ -1,0 +1,6 @@
+Name: CMX OPC Data
+Id: g=121dbd3126b8f1f7a0fe289059ec0bb4
+Type: FolderType
+Children:
+- File: Sim1/Sim1.yaml
+- File: Sim2/Sim2.yaml

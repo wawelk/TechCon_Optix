@@ -1,0 +1,34 @@
+Name: Sim1
+Id: g=2ca4279c2abbb71aa3ac2d9c37d40f2a
+Type: FolderType
+Children:
+- Name: Optix_Sine1
+  Id: g=5e4a04577b2761f6d3c145efa8352a10
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Id: g=7ffefef0f6cef09428890b83c1e1e1f5
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../NetLogic/Simulator1/Sine"
+- Name: Optix_Cosine1
+  Id: g=04ff8a7fe5e875362554b80e2bec317d
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Id: g=76aa03d5a73c67182dddbf8953cf8290
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../NetLogic/Simulator1/Cosine"
+- Name: Optix_Ramp1
+  Id: g=71ac8479bc4e7b1c4938e14fad765836
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Id: g=872ecd3f76bdec3a6ce4646207322e2b
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../NetLogic/Simulator1/Ramp"

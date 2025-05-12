@@ -1,0 +1,251 @@
+Name: OPCUAClient1
+Id: g=7152432127537257d2e84d9678e71551
+Type: OPCUAClient
+Children:
+- Name: ServerEndpointURL
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "opc.tcp://10.10.1.11:4840"
+- Name: MinimumMessageSecurityMode
+  Type: BaseDataVariableType
+  DataType: ns=33;MessageSecurityModeEnum
+- Name: MinimumSecurityPolicy
+  Type: BaseDataVariableType
+  DataType: ns=33;SecurityPolicyEnum
+- Name: UserIdentityType
+  Type: BaseDataVariableType
+  DataType: UserIdentityTypeEnum
+- Name: ConnectionStatus
+  Type: BaseDataVariableType
+  DataType: ConnectionStatusEnum
+  AccessLevel: Read
+- Name: ServerUri
+  Type: BaseDataVariableType
+  DataType: String
+  AccessLevel: Read
+- Name: Events
+  Type: BaseDataVariableType
+  DataType: EventsEnum
+  Value: 1
+- Name: RuntimeConfigurations
+  Type: BaseObjectType
+- Class: Reference
+  Target: ns=33;i=8
+  Direction: Forward
+- Class: Reference
+  Target: ns=33;i=9
+  Direction: Forward
+- Class: Reference
+  Target: ns=33;i=54
+  Direction: Forward
+- Class: Reference
+  Target: ns=33;i=57
+  Direction: Forward
+- Class: Reference
+  Target: ns=33;i=91
+  Direction: Forward
+- Class: Reference
+  Target: ns=33;i=60
+  Direction: Forward
+- Class: Reference
+  Target: ns=33;i=63
+  Direction: Forward
+- Class: Reference
+  Target: ns=33;i=83
+  Direction: Forward
+- Class: Reference
+  Target: ns=33;i=75
+  Direction: Forward
+- Name: VerifyServerIdentity
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Objects
+  Type: BaseObjectType
+  Children:
+  - Name: 'ns=35;00, Compact GuardLogix 5380 SIL2, SineWaves'
+    Id: 'ns=35;s=__Controller:Compact GuardLogix 5380 SIL2__'
+    Type: FolderType
+    DisplayName: {"LocaleId":"","Text":"00, Compact GuardLogix 5380 SIL2, SineWaves"}
+    Description: {"LocaleId":"en-US","Text":""}
+    Children:
+    - File: Program_MainProgram/Program_MainProgram.yaml
+  - Name: LogixBaseVariableType
+    Id: 'ns=35;s={LogixBaseVariableType}'
+    Supertype: BaseDataVariableType
+    DataType: BaseDataType
+    DisplayName: {"LocaleId":"","Text":"LogixBaseVariableType"}
+    Description: {"LocaleId":"en-US","Text":"Base Variable Type for all Logix Variable Types."}
+  - Class: DataType
+    Name: LogixBaseStructureDataType
+    Id: 'ns=35;s={LogixBaseStructureDataType}'
+    Supertype: Structure
+    StructDefinition: 
+     {
+      "Name": "LogixBaseStructureDataType",
+      "DataType": {
+       "IdType": 1,
+       "Id": "{LogixBaseStructureDataType}",
+       "Namespace": 35
+      },
+      "Fields": []
+     }
+    DisplayName: {"LocaleId":"","Text":"LogixBaseStructureDataType"}
+    Description: {"LocaleId":"en-US","Text":"The base type of all Logix structured DataTypes."}
+  - Class: DataType
+    Name: SinWaveDataType
+    Id: 'ns=35;s={SinWave}DataType'
+    Supertype: LogixBaseStructureDataType
+    StructDefinition: 
+     {
+      "Name": "SinWaveDataType",
+      "DataType": {
+       "IdType": 1,
+       "Id": "{SinWave}DataType",
+       "Namespace": 35
+      },
+      "Fields": [{
+        "Name": "EnableIn",
+        "DataType": {
+         "Id": 1
+        },
+        "Description": {
+         "LocaleId": "en-US",
+         "Text": ""
+        }
+       },{
+        "Name": "EnableOut",
+        "DataType": {
+         "Id": 1
+        },
+        "Description": {
+         "LocaleId": "en-US",
+         "Text": ""
+        }
+       },{
+        "Name": "Period",
+        "DataType": {
+         "Id": 6
+        },
+        "Description": {
+         "LocaleId": "en-US",
+         "Text": ""
+        }
+       },{
+        "Name": "Phase_Shift",
+        "DataType": {
+         "Id": 6
+        },
+        "Description": {
+         "LocaleId": "en-US",
+         "Text": ""
+        }
+       },{
+        "Name": "Amplitude",
+        "DataType": {
+         "Id": 10
+        },
+        "Description": {
+         "LocaleId": "en-US",
+         "Text": ""
+        }
+       },{
+        "Name": "SinWave",
+        "DataType": {
+         "Id": 10
+        },
+        "Description": {
+         "LocaleId": "en-US",
+         "Text": ""
+        }
+       },{
+        "Name": "NoOfCycles_Reset",
+        "DataType": {
+         "Id": 1
+        },
+        "Description": {
+         "LocaleId": "en-US",
+         "Text": ""
+        }
+       },{
+        "Name": "Error",
+        "DataType": {
+         "Id": 1
+        },
+        "Description": {
+         "LocaleId": "en-US",
+         "Text": ""
+        }
+       }]
+     }
+    DisplayName: {"LocaleId":"","Text":"SinWaveDataType"}
+    Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees"}
+    Children:
+    - Name: ns=0;Default Binary
+      Id: ns=35;i=65027
+      Type: DataTypeEncodingType
+      ModellingRule: None
+      DisplayName: {"LocaleId":"","Text":"Default Binary"}
+      ReferenceType: HasEncoding
+  - Name: SinWaveVariableType
+    Id: 'ns=35;s={SinWave}VariableType'
+    Supertype: LogixBaseVariableType
+    DataType: SinWaveDataType
+    DisplayName: {"LocaleId":"","Text":"SinWaveVariableType"}
+    Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees"}
+    Children:
+    - Name: ns=35;EnableIn
+      Id: 'ns=35;s={SinWave}VariableType.EnableIn'
+      Type: BaseDataVariableType
+      DataType: Boolean
+      DisplayName: {"LocaleId":"","Text":"EnableIn"}
+      Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees Enable Input - System Defined Parameter"}
+      ReferenceType: HasStructuredComponent
+    - Name: ns=35;EnableOut
+      Id: 'ns=35;s={SinWave}VariableType.EnableOut'
+      Type: BaseDataVariableType
+      DataType: Boolean
+      DisplayName: {"LocaleId":"","Text":"EnableOut"}
+      Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees Enable Output - System Defined Parameter"}
+      ReferenceType: HasStructuredComponent
+    - Name: ns=35;Period
+      Id: 'ns=35;s={SinWave}VariableType.Period'
+      Type: BaseDataVariableType
+      DataType: Int32
+      DisplayName: {"LocaleId":"","Text":"Period"}
+      Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees Period of Wave. Must be > 100ms."}
+      ReferenceType: HasStructuredComponent
+    - Name: ns=35;Phase_Shift
+      Id: 'ns=35;s={SinWave}VariableType.Phase_Shift'
+      Type: BaseDataVariableType
+      DataType: Int32
+      DisplayName: {"LocaleId":"","Text":"Phase_Shift"}
+      Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees"}
+      ReferenceType: HasStructuredComponent
+    - Name: ns=35;Amplitude
+      Id: 'ns=35;s={SinWave}VariableType.Amplitude'
+      Type: BaseDataVariableType
+      DataType: Float
+      DisplayName: {"LocaleId":"","Text":"Amplitude"}
+      Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees"}
+      ReferenceType: HasStructuredComponent
+    - Name: ns=35;SinWave
+      Id: 'ns=35;s={SinWave}VariableType.SinWave'
+      Type: BaseDataVariableType
+      DataType: Float
+      DisplayName: {"LocaleId":"","Text":"SinWave"}
+      Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees Sin wave output in radians."}
+      ReferenceType: HasStructuredComponent
+    - Name: ns=35;NoOfCycles_Reset
+      Id: 'ns=35;s={SinWave}VariableType.NoOfCycles_Reset'
+      Type: BaseDataVariableType
+      DataType: Boolean
+      DisplayName: {"LocaleId":"","Text":"NoOfCycles_Reset"}
+      Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees Total number of repeated wave form since start/last reset."}
+      ReferenceType: HasStructuredComponent
+    - Name: ns=35;Error
+      Id: 'ns=35;s={SinWave}VariableType.Error'
+      Type: BaseDataVariableType
+      DataType: Boolean
+      DisplayName: {"LocaleId":"","Text":"Error"}
+      Description: {"LocaleId":"en-US","Text":"This AOI produces repetitive Sin waves which can be used for trending. This is based on bellow formula:\r\ny=A.Sin(bx+C) where\r\ny= Sin in radians\r\nA = Amplitude\r\nb= Period in msec\r\nC= Phase shift in degrees"}
+      ReferenceType: HasStructuredComponent
