@@ -915,7 +915,7 @@ Children:
   - Name: IPAddress
     Type: BaseDataVariableType
     DataType: String
-    Value: "10.10.1.101"
+    Value: "192.168.0.108"
   - Name: Port
     Type: BaseDataVariableType
     DataType: UInt16

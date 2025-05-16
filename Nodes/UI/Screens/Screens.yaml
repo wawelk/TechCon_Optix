@@ -642,7 +642,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"opc.tcp://10.10.1.101:59100"}
+      Value: {"LocaleId":"en-US","Text":"opc.tcp://192.168.0.108:59100"}
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -1133,7 +1133,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"opc.tcp://10.10.1.11:4840"}
+      Value: {"LocaleId":"en-US","Text":"opc.tcp://192.168.0.111:4840"}
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
