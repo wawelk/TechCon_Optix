@@ -17,7 +17,7 @@ Children:
     - Name: Path
       Type: BaseDataVariableType
       DataType: ResourceUri
-      Value: "ns=28;%PROJECTDIR%/TechCon OPC UA Demo Modbus.png"
+      Value: "ns=28;%PROJECTDIR%/TechCon OPC UA Demo System.png"
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
