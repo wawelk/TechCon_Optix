@@ -2825,3 +2825,57 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 591.0
+- Name: Elpro
+  Id: g=d9116cdcd348cb2d4a0ee9ceab288931
+  Supertype: Screen
+  ReferenceType: HasComponent
+- Name: PDF
+  Id: g=2809da05f3efc49c89e6d4c99f47d178
+  Supertype: Screen
+  ReferenceType: HasComponent
+  Children:
+  - Name: BackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    ModellingRule: Optional
+    Value: "#ffffff"
+  - Name: PdfViewer1
+    Type: PdfViewer
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=28;%PROJECTDIR%/Extending ViewSE with Optix TRC 2025_05.pdf"
+    - Name: CurrentPage
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 400.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 780.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
